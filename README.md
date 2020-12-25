@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# React App Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and has been customised with [Ant Design](https://ant.design/) and [Auth0](https://auth0.com/).
+
+
 
 ## Available Scripts
 

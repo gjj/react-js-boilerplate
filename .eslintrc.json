@@ -4,6 +4,7 @@
     "es2021": true
   },
   "extends": [
+    "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
@@ -30,9 +31,9 @@
         ]
       }
     ],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
     "no-console": "off",
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
