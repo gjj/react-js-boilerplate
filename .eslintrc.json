@@ -4,9 +4,10 @@
     "es2021": true
   },
   "extends": [
-    "eslint:recommended",
     "plugin:prettier/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -14,6 +15,11 @@
     },
     "ecmaVersion": 12,
     "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   },
   "plugins": [
     "react",
@@ -32,8 +38,25 @@
       }
     ],
     "no-console": "off",
-    "react/prop-types": 0,
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "react/no-unescaped-entities": [
+      "error",
+      {
+        "forbid": [
+          ">",
+          "}",
+          "\""
+        ]
+      }
+    ],
+    "react/prop-types": "off",
+    "react/self-closing-comp": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/rules-of-hooks": "error"
   }
 }
