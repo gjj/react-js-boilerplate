@@ -1,8 +1,11 @@
 # React App Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and has been customised with [Ant Design](https://ant.design/) and [Auth0](https://auth0.com/).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and has been customised with:
 
-
+- [Ant Design](https://ant.design/) for the design system
+- [Auth0](https://auth0.com/) for identity management
+- [Prettier](https://prettier.io/docs/en/comparison.html) for code formatting
+- [ESLint](https://eslint.org/) to flag mistakes in your JS codes
 
 ## Available Scripts
 

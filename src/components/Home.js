@@ -1,8 +1,11 @@
 import React from "react";
-import { Button } from "antd";
 
 function Home() {
-  return <Button type="primary">Button</Button>;
+  return (
+    <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
+      Content
+    </div>
+  );
 }
 
 export default Home;
