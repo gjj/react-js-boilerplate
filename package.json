@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.3.0",
     "@auth0/auth0-react": "^1.2.0",
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
     "antd": "^4.9.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -20,9 +18,14 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "integration": "testcafe chrome integration/**/*.spec.js --app \"BROWSER=none npm run start\"",
+    "integration:headless": "testcafe chrome:headless integration/**/*.spec.js --app \"http-server ./build --port 3000\" --app-init-delay 5000"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.6.0",
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
@@ -31,6 +34,7 @@
     "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.10.1",
     "prettier": "2.2.1"
   },
   "browserslist": {
