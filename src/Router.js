@@ -1,5 +1,4 @@
-import { Menu } from "antd";
-import Layout, { Content, Footer, Header } from "antd/lib/layout/layout";
+import Layout, { Content, Footer } from "antd/lib/layout/layout";
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import PackageJson from "../package.json";
