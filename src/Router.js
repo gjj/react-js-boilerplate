@@ -1,22 +1,15 @@
-import { Menu } from "antd";
-import Layout, { Content, Footer, Header } from "antd/lib/layout/layout";
+import Layout, { Content, Footer } from "antd/lib/layout/layout";
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import PackageJson from "../package.json";
 import Home from "./components/Home";
+import NavbarTop from "./components/ui/NavbarTop";
 
 export default function Router() {
   return (
     <BrowserRouter>
       <Layout className="layout">
-        <Header>
-          <div className="logo" />
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
-            <Menu.Item key="1">Home</Menu.Item>
-            <Menu.Item key="2">nav 2</Menu.Item>
-            <Menu.Item key="3">nav 3</Menu.Item>
-          </Menu>
-        </Header>
+        <NavbarTop />
         <Content style={{ padding: "16px 50px" }}>
           <div className="site-layout-content">
             <div>
