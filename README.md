@@ -3,11 +3,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and comes with:
 
 - [Ant Design](https://ant.design/) for the design system
-- [Auth0](https://auth0.com/) for identity management
-- [CircleCI](https://circleci.com/) for CI/CD
-- [ESLint](https://eslint.org/) to flag mistakes in your JS codes
-- [Prettier](https://prettier.io/docs/en/comparison.html) for code formatting
-
+- [Firebase](https://firebase.google.com/) for its Hosting (including CI/CD) and Authentication (identity management) products
+- [CircleCI](https://circleci.com/) for CI/CD (will be removed in a later version)
+- [ESLint](https://eslint.org/) for linting tools, you should also have ESLint installed in VS Code
+- [Prettier](https://prettier.io/docs/en/comparison.html) for a consistent code style, this has been configured within `.eslintrc.json`
 ## Available Scripts
 
 In the project directory, you can run:
