@@ -1,5 +1,7 @@
 # React App Template
 
+![Build](https://github.com/gjj/react-js-boilerplate/actions/workflows/firebase-hosting-merge.yml/badge.svg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and comes with:
 
 - [Ant Design](https://ant.design/) for the design system
