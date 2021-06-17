@@ -2,7 +2,9 @@ import Layout, { Content, Footer } from "antd/lib/layout/layout";
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import PackageJson from "../package.json";
+import ProtectedRoute from "./auth/ProtectedRoute";
 import Home from "./components/Home";
+import Profile from "./components/profile/Profile";
 import NavbarTop from "./components/ui/NavbarTop";
 
 export default function Router() {
@@ -19,6 +21,9 @@ export default function Router() {
                 <Route exact path="/">
                   <Home />
                 </Route>
+                <ProtectedRoute exact path="/profile">
+                  <Profile />
+                </ProtectedRoute>
               </Switch>
             </div>
           </div>
