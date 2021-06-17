@@ -68,3 +68,6 @@ yarn.lock
 **/.firebase
 **/.firebaserc
 **/firebase-debug.log
+
+# Environment
+.env
